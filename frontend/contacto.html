@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="formulario">
+        <legend>¡Envianos tu consulta!</legend>
+
+        <form action="/contacto" method="post" >
+          
+            <div id="grupo_nombre">
+                <label for="Nombre">
+                    <p class="name">Nombre <span>*</span></p>
+                    <input type="text" name="nombre" id="nombre" title="Nombre solo acepta letras y espacios en blanco"
+                        minlength="4" maxlength="20">
+                </label>
+            </div>
+
+
+          
+
+            <label for="Email">
+                <p class="correoE">Correo electrónico <span>*</span></p>
+                <input type="email" name="email" id="email" title="Email incorrecto">
+
+            </label>
+
+            
+
+            <label for="telefono">
+                <p class="phoneNumber">Número de teléfono <span>*</span></p>
+                <input type="text" name="telefono" id="telefono">
+            </label>
+
+        
+
+            <p class="coment">¿En qué podemos ayudarte? <span>*</span></p>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"
+                title="Tu comentario no debe exceder los 255 caracteres"></textarea>
+
+            <br>
+
+
+           
+
+            <button type = "submit" id="enviando">Enviar</button>
+
+            
+            
+           
+
+
+        </form>
+
+        
+
+
+
+
+    </div>
+
+
+</body>
+</html>

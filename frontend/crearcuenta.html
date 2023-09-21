@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <div id="registro1">
+            <form action= "/crearcuenta" method="post" >
+                <h2>INFORMACIÓN PERSONAL</h2>
+                <br>
+            <label for="nombre">Nombre<span>*</span>
+                <input type="text" name="nombre" id="nombre" required>
+                
+            </label>
+            <br>
+            <label for="apellido">Apellido<span>*</span>
+                <input type="text" name="apellido" id="apellido" required>
+        
+            </label>
+            <br>
+            
+            
+            <label for="fechaNacimiento">Fecha de nacimiento
+                <input type="datetime-local" name="fechaNacimiento" id="fechaNacimiento" required>
+            </label>
+            <br>
+            <label for="dni">DNI
+                <input type="text" name="dni" id="dni">
+        
+            </label>
+        
+            <div id="registro2">
+        
+                
+               <h2>INFORMACIÓN DE INICIO DE SESIÓN</h2>
+               <br>
+               <label for="email">Correo electrónico <span>*</span>
+                <input type="email" name="email" id="email" required>
+                </label>
+                <br>
+                <label for="contraseña">Contraseña <span>*</span>
+                    <input type="password" name="contraseña" id="contraseña" required>
+            
+                </label>
+         
+                <button type="submit"  id="button2">CREAR</button>
+            
+           
+            </div>
+                
+        </div>
+        
+        </form>
+            
+        </div>
+        
+      
+    <br><br><br>
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

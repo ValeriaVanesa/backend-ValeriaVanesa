@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Dancing+Script:wght@700&family=Kalam:wght@700&family=Libre+Baskerville&family=Lilita+One&family=Montserrat:ital,wght@1,400;1,700&family=Mulish:ital,wght@1,400;1,600;1,700&family=MuseoModerno:wght@700&family=Open+Sans&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,700&family=Roboto:ital,wght@1,400;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+textarea{
+    overflow:auto;
+}
+
+body{
+  margin:0;
+  padding:0;
+ font-family: 'Open Sans', sans-serif;
+scroll-behavior: smooth;
+}
+
+.fijo{
+    width: 100%;
+    height:150px;
+    
+    background-color:black;
+    margin-bottom:0;
+    
+    }
+    
+    
+    h1{
+    text-align:center;
+    font-size:60px;
+    color:white;
+    
+    }
+    
+    nav{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        margin:auto;
+        
+    }
+    
+    nav a{
+        padding:16px;
+        text-decoration: none;
+        color:black;
+       margin-top:-35px;
+    
+    }
+    
+    a:hover{
+        color:#F07BE4;
+        font-size:20px;
+        
+    }
+    
+    a:visited{
+        
+        font-weight:bold;
+       border:1px solid  #F42EDD;
+       border-left:grey;
+       border-right:grey;
+    }
+
+#menu-horizontal{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+
+}
+
+#menu-horizontal >li>a{
+display:block;
+padding:15px 20px;
+text-decoration:none;
+
+}
+
+#menu-vertical{
+position:absolute;
+display:none;
+list-style:none;
+margin-top:-10px;
+width:170px;
+font-weight:bold;
+background: linear-gradient(0deg, rgba(241,175,210,0.35898109243697474) 0%, rgba(167,163,163,0.30015756302521013) 43%, rgba(241,175,210,0.4654236694677871) 100%);
+
+font-size:15px;
+
+
+}
+#menu-vertical a:hover{
+    font-size:15px;
+}
+
+#menu-horizontal li:hover #menu-vertical{
+display:block;
+
+}
+#menu-vertical li{
+
+ border:1px solid grey;
+ padding-top:5px;
+ padding-bottom:5px;
+ 
+border-left:none;
+border-right:none;
+
+
+}
+
+
+
+
+    section{
+        position:sticky;
+        background: linear-gradient(0deg, rgba(46,46,46,0.12228641456582634) 0%, rgba(103,103,103,0.09147408963585435) 100%);
+        width:100%;
+        height:50px;
+        top:20px;
+        
+    }
+    .registrarse{
+        display:flex;
+        justify-content:flex-end;
+        margin-top:50px;
+       
+    
+        
+    }
+    
+    .registrarse a{
+        text-decoration:none;
+        color:black;
+        padding:5px;
+        display:flex;
+        justify-content:space-around;
+        
+        
+    
+    }
+    
+    .registrarse a:hover{
+        color:#F07BE4; ;
+        text-decoration:underline#F07BE4; 
+        font-size:18px;
+        
+    }
+    h2{
+        color:white;
+        font-size:17px;
+        margin-top:23px;
+    }
+    
+    
+    
+    
+    
+    .pagos img{
+        width:50px;
+        margin:5px;
+        
+        }
+    .pagos{
+        
+        margin-top:10px;
+        margin-left:40%;
+     
+    }
+    
+    .heartValmour{
+        display:flex;
+        justify-content:space-evenly;
+        margin-right:110px;
+    }
+    
+    .heartValmour img{
+        width:25px;
+        height:25px;
+        margin-top:23px;
+        margin-right:5px;
+    }
+    
+    
+    
+    footer{
+        background-color:black;
+        display:flex;
+        justify-content:space-around;
+        height:300px;
+    }
+    
+    footer a{
+        color:white;
+        font-size:14px;
+        text-decoration:none;
+        
+    }
+    
+    footer a:hover{
+        color:#F07BE4;
+        text-decoration:underline #F07BE4; 
+        font-size:16px;
+    
+    }
+    
+    
+    footer p{
+        color:white;
+        font-size:14px;
+    }
+    
+    .logoWhatsapp{
+        
+        width:50px;
+        height:200px;
+        
+        
+         margin-left:95%;
+         position:fixed;
+         top:850px;
+         }
+        
+        .logoWhatsapp img{
+            width:60px;
+           
+        }
+
+
+        iframe{
+            width:100%;
+           height:250px;
+        
+            
+          }
+            
+            .name{
+                margin-right:885px;
+            }
+        
+            .correoE{
+                margin-right:812px;
+            }
+        
+            .phoneNumber{
+                margin-right:807px;
+            }
+        
+            .coment{
+                margin-right:760px;
+            }
+         
+            .redesSociales{
+                display:flex;
+                justify-content:flex-end;
+                margin-top:44px;
+            
+            }
+            .redesSociales img{
+            width:40px;
+            margin:15px;
+            height:40px;
+            
+            }
+            
+            
+            footer img{
+                width:20px;
+                
+            }
+            
+            .llamada{
+                display:flex;
+                justify-content:space-evenly;
+               margin-right:240px;
+               margin-bottom:10px;
+             
+                
+            
+            }
+            
+            
+            .gmail{
+                display:flex;
+                justify-content:space-evenly;
+               margin-right:195px;
+               margin-bottom:10px;
+            }
+            
+            .localizacion{
+                display:flex;
+                justify-content:space-evenly;
+               margin-right:100px;
+               margin-bottom:10px;
+            }
+            
+            .newsletter{
+                display:flex;
+                justify-content:space-around;
+                
+                }
+                
+                .newsletter form{
+                    margin-right:55%;
+                   
+                
+                }
+                
+                
+                .newsletter p{
+                    font-size:20px;
+                    color:#FD5D9D;
+                    font-weight:bold;
+                }
+                
+                
+                .newsletter input[type="email"]{
+                width:300px;
+                height:40px;
+                border-radius:0.4rem;
+                border:1.9px solid black;
+                
+                        
+                }
+                
+                button{
+                    width:100px;
+                    height:40px;
+                    color:white;
+                    border:black;
+                    background-color:black;
+                    border-radius:0.4rem;
+                    font-size:13px;
+                    
+                
+                }
+                
+                button:hover{
+                    color: white;
+                    background-color:#FD5D9D;
+                }
+
+                .envios{
+                    width:100%;
+                    height:40px;
+                    
+                    
+                    margin-top:0;
+                    
+                
+                }
+                
+                .envios p{
+                    color:white;
+                    text-align:center;
+                }
+
+     .Product{
+        display:inline;
+        font-weight:bold;
+    }
+
+    #inicio{
+        color:black;
+        text-decoration:none;
+
+    }
+    #inicio:hover{
+        text-decoration:underline;
+    }
+    
+
+    #Categoria3{
+        width:180px;
+        height:160px;
+        background-color:rgb(252, 203, 237);
+    }
+    #Categoria3 a{
+        color:black;
+        text-decoration:none;
+    }
+
+    #Categoria3 a:hover{
+        color:#F07BE4;
+        text-decoration:underline;
+    }
+
+
+
+
+
+
+.registrarse img{
+    margin-left:5px;
+    margin-right:15px;
+    width:35px;
+    height:35px;
+}
+
+.registrarse img:hover{
+    content: url(../assets/imagenes/bolsacompras2.png);
+    opacity:75%;
+}
+
+
+
+
+
+
+
+#shopContent {     
+
+   
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+#shopContent img{
+    margin-left:150px;
+    margin-right:150px;
+    margin-bottom:20px;            
+    margin-top:30px;
+    width: 316px;
+    height:316px;
+}
+
+#shopContent img:hover{
+   border:1px solid black;
+   opacity:90%;
+}
+#shopContent h3,p{
+    text-align:center;
+
+}
+
+.comprar{
+    width:100px;
+    background-color:black;
+    color:white;
+    margin-left:250px;
+}
+#tienda{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.modal-container{
+    width:40%;
+    max-height:88vh;
+    color:white;
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:fixed;
+    overflow:auto;
+    z-index:9;
+    top:12vh;
+    scrollbar-color:none;
+    margin-left:1100px;
+    margin-top:130px;
+    border-radius:1rem;
+
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    background-color:#FD5D9D;
+    color:white;
+    width:100%;
+    
+    
+}
+
+
+.modal-header-button{
+  cursor:pointer;
+  width:30px;
+  height:30px;
+  background-color:black;
+  border-radius:2rem;
+  color:white;
+  margin-top:20px;
+  margin-right:20px;
+
+
+}
+
+.modal-container > .modal-content{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:90%;
+    margin:10px;
+}
+
+.modal-container > div >img{
+    height:120px;
+    width:120px;
+}
+
+.total-content{
+    font-size:25px;
+    padding:20px;
+    text-align:center;
+    padding-top:20px;
+}
+
+
+.delete-product{
+    cursor:pointer;
+}
+
