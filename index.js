@@ -4,8 +4,9 @@ const dotenv= require("dotenv");
 dotenv.config();
 const cors = require("cors");
 const usersRoutes = require('./routes/usersRoutes');
-const productosRoutes = require('./routes/productosRoutes');
+
 const suscripcionRoutes = require('./routes/suscripcionRoutes');
+const compraRoutes = require('./routes/compraRoutes');
 const contactoRoutes = require('./routes/contactoRoutes');
 const crearCuentaRoutes = require('./routes/crearCuentaRoutes');
 const path= require("path");
@@ -23,8 +24,9 @@ app.use(express.static(path.join(__dirname,'frontend')));
 app.use(cors());
 
 app.use('/users', usersRoutes);
-app.use('/productos', productosRoutes);
+
 app.use('/suscripcion',suscripcionRoutes);
+app.use('/compra',compraRoutes);
 app.use('/contacto',contactoRoutes);
 app.use('/crearcuenta', crearCuentaRoutes);
 

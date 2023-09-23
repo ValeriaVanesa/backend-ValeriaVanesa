@@ -254,7 +254,46 @@ const pintarCarrito =()=>{
    totalBuying.className= "total-content"
    totalBuying.innerHTML=` total al pagar : $ ${total} `;
    modalContainer.append(totalBuying);
-   
+
+   const buttonBuying= document.createElement("button")
+   buttonBuying.className= ""
+   buttonBuying.innerHTML=`Finalizar Compra`;
+   modalContainer.append(buttonBuying);
+
+   buttonBuying.addEventListener("click", () => {
+      limpiarCarrito()
+      terminarCompra(carrito)
+   });
+
+   const limpiarCarrito = () => {
+
+   }
+
+   const terminarCompra = (carrito) => {
+
+      // URL de la ruta en el servidor donde deseas enviar los datos
+      const url = '/compra';
+      let datos = carrito
+      // Crear un objeto de formulario en JavaScript
+      const formulario = document.createElement('form');
+
+      // Configurar el formulario
+      formulario.method = 'POST';
+      formulario.action = url;
+
+      // Agregar campos al formulario
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.name = 'productos';
+      input.value = JSON.stringify(carrito);
+      formulario.appendChild(input);
+
+      // Agregar el formulario al cuerpo del documento
+      document.body.appendChild(formulario);
+
+      // Enviar el formulario
+      formulario.submit();
+   }
 };
 
 verCarrito.addEventListener("click", pintarCarrito);
